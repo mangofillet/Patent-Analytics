@@ -1,0 +1,22 @@
+# Core data-science stack
+numpy
+pandas
+scikit-learn
+matplotlib
+requests
+jupyter
+
+# Deep-learning backend
+tensorflow-cpu>=2.16
+
+# NLP — patent title embedding
+sentence-transformers>=2.7
+transformers>=4.40
+
+# Clustering
+hdbscan>=0.8.33
+umap-learn>=0.5.6        # dimensionality reduction for visualization + clustering input
+
+# Visualization
+plotly>=5.20
+dash>=2.16

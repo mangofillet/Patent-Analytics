@@ -1,0 +1,63 @@
+topic_id,topic_name,domain,eruption_type,eruption_year,growth_x,is_nobel,cluster_id,auto_label,cosine_sim,confident,cluster_takeoff,eruption_q,lead_time_q
+T13675,Diffusion Coefficients in Liquids,Physical Sciences,emerging,2017,24.9,False,1132,cluster_1132,0.4073,True,,2017-01-01,
+T12983,Satellite Image Processing and Photogrammetry,Physical Sciences,acceleration,2015,23.5,False,656,"satellite, communication, method, satellite communication, network",0.5647,True,2002-04-01 00:00:00,2015-01-01,51.0
+T10579,Cognitive Radio Networks and Spectrum Sensing,Physical Sciences,emerging,2010,21.0,False,1356,"cognitive, method, spectrum, radio, cognitive radio",0.8419,True,,2010-01-01,
+T11926,Subterranean biodiversity and taxonomy,Physical Sciences,acceleration,2020,14.6,False,2171,"subterranean, formation, subterranean formation, treatment, subterranean formations",0.5131,True,2019-01-01 00:00:00,2020-01-01,4.0
+T13568,Wood and Agarwood Research,Physical Sciences,acceleration,2020,12.3,False,180,"tree, stand, tree stand, christmas tree, christmas",0.4242,True,2018-01-01 00:00:00,2020-01-01,8.0
+T13679,Tardigrade Biology and Ecology,Life Sciences,emerging,2017,11.4,False,696,"plants, plant, gene, transgenic plants, proteins",0.284,True,2002-04-01 00:00:00,2017-01-01,59.0
+T10874,Electromagnetic Fields and Biological Effects,Life Sciences,acceleration,2018,10.4,False,1214,cluster_1214,0.502,True,,2018-01-01,
+T12710,Engineering and Agricultural Innovations,Life Sciences,acceleration,2022,10.2,False,173,"agricultural, harvester, harvesting, combine, crop",0.5952,True,2003-04-01 00:00:00,2022-01-01,75.0
+T12424,Earthquake Detection and Analysis,Physical Sciences,acceleration,2020,9.7,False,66,"seismic, method, data, seismic data, exploration",0.7236,True,2002-04-01 00:00:00,2020-01-01,71.0
+T12836,History and Developments in Astronomy,Physical Sciences,acceleration,2011,9.3,False,883,"scintillator, radiation, panel, scintillator panel, scintillation",0.2667,True,2005-01-01 00:00:00,2011-01-01,24.0
+T13175,Historical Astronomy and Related Studies,Physical Sciences,acceleration,2014,9.1,False,26,"method, calender, calendar, apparatus, method apparatus",0.257,True,2003-07-01 00:00:00,2014-01-01,42.0
+T10664,Sentiment Analysis and Opinion Mining,Physical Sciences,emerging,2010,8.5,False,2194,"sentiment, method, analysis, sentiment analysis, data",0.7618,True,,2010-01-01,
+T11458,Advanced Wireless Communication Technologies,Physical Sciences,emerging,2010,7.8,False,1265,"wireless, communication, method, wireless communication, communications",0.7087,True,,2010-01-01,
+T11878,Solid-state spectroscopy and crystallography,Physical Sciences,acceleration,2018,7.3,False,2200,cluster_2200,0.4592,True,,2018-01-01,
+T10990,Infection Control and Ventilation,Health Sciences,acceleration,2020,7.2,False,129,"ventilation, vent, ventilator, venting, attic",0.5803,True,2003-04-01 00:00:00,2020-01-01,67.0
+T12527,Chemistry and Stereochemistry Studies,Physical Sciences,acceleration,2011,7.2,False,971,"stereoscopic, display, image, stereo, stereoscopic image",0.496,True,2006-01-01 00:00:00,2011-01-01,20.0
+T13541,IoT-based Control Systems,Physical Sciences,emerging,2010,7.0,False,2526,cluster_2526,0.7283,True,,2010-01-01,
+T11714,Multimodal Machine Learning Applications,Physical Sciences,acceleration,2019,6.5,False,2080,"learning, machine, machine learning, data, predictive",0.5282,True,2018-01-01 00:00:00,2019-01-01,4.0
+T13567,AI and Multimedia in Education,Physical Sciences,emerging,2021,6.5,False,427,"method, learning, computer, educational, apparatus",0.4586,True,2003-01-01 00:00:00,2021-01-01,72.0
+T13647,AI and Big Data Applications,Physical Sciences,emerging,2020,6.4,False,815,"data, processing, data processing, apparatus, method",0.4866,True,2003-01-01 00:00:00,2020-01-01,68.0
+T10676,"Genetics, Aging, and Longevity in Model Organisms",Life Sciences,acceleration,2017,6.4,False,1468,"method, gene, methods, analysis, genetic",0.344,True,2012-01-01 00:00:00,2017-01-01,20.0
+T12522,Mathematics Education and Pedagogy,Physical Sciences,acceleration,2013,6.4,False,427,"method, learning, computer, educational, apparatus",0.2948,True,2003-01-01 00:00:00,2013-01-01,40.0
+T13602,Educational Methods and Media Use,Physical Sciences,acceleration,2010,6.2,False,962,"media, multimedia, method, content, systems",0.5221,True,2006-01-01 00:00:00,2010-01-01,16.0
+T12026,Explainable Artificial Intelligence (XAI),Physical Sciences,emerging,2018,6.2,False,2080,"learning, machine, machine learning, data, predictive",0.4391,True,,2018-01-01,
+T10275,2D Materials and Applications,Physical Sciences,acceleration,2016,6.2,False,1141,"method, nanostructures, methods, making, nanostructure",0.5112,True,2009-01-01 00:00:00,2016-01-01,28.0
+T12640,Environmental DNA in Biodiversity Studies,Physical Sciences,acceleration,2020,6.0,False,715,"nucleic, nucleic acid, acid, method, dna",0.4535,True,2003-01-01 00:00:00,2020-01-01,68.0
+T11636,Artificial Intelligence in Healthcare and Education,Health Sciences,acceleration,2020,5.9,False,2519,cluster_2519,0.5407,True,,2020-01-01,
+T11689,Adversarial Robustness in Machine Learning,Physical Sciences,emerging,2017,5.9,False,2376,"adversarial, learning, neural, systems, networks",0.8241,True,,2017-01-01,
+T10036,Advanced Neural Network Applications,Physical Sciences,acceleration,2017,5.8,False,2199,"neural, network, neural network, networks, deep",0.6563,True,,2017-01-01,
+T10775,Generative Adversarial Networks and Image Synthesis,Physical Sciences,acceleration,2019,5.8,False,2402,cluster_2402,0.8397,True,,2019-01-01,
+T11307,Domain Adaptation and Few-Shot Learning,Physical Sciences,acceleration,2019,5.8,False,2557,cluster_2557,0.6838,True,,2019-01-01,
+T12859,Cell Image Analysis Techniques,Life Sciences,acceleration,2020,5.6,False,1472,"cell, method, communication, wireless, apparatus",0.8273,True,2012-01-01 00:00:00,2020-01-01,32.0
+T11710,Biomedical Text Mining and Ontologies,Life Sciences,acceleration,2022,5.6,False,706,"method, retrieval, information, search, document",0.4571,True,2002-04-01 00:00:00,2022-01-01,79.0
+T13124,Chemical synthesis and alkaloids,Physical Sciences,acceleration,2022,5.5,False,822,"derivatives, indole, indole derivatives, substituted, preparation",0.5488,True,2003-01-01 00:00:00,2022-01-01,76.0
+T12079,IoT Networks and Protocols,Physical Sciences,emerging,2015,5.4,False,2526,cluster_2526,0.7008,True,,2015-01-01,
+T11342,Carbon and Quantum Dots Applications,Physical Sciences,emerging,2012,5.4,False,1185,"quantum, dot, quantum dot, method, quantum dots",0.73,True,2010-01-01 00:00:00,2012-01-01,8.0
+T11765,Circular RNAs in diseases,Life Sciences,emerging,2010,5.3,False,1254,"rna, interference, rna interference, interfering, expression",0.6223,True,,2010-01-01,
+T13373,Data Mining and Machine Learning Applications,Physical Sciences,emerging,2010,5.3,False,2080,"learning, machine, machine learning, data, predictive",0.6319,True,,2010-01-01,
+T11757,Seismic Waves and Analysis,Physical Sciences,acceleration,2020,5.3,False,66,"seismic, method, data, seismic data, exploration",0.7486,True,2002-04-01 00:00:00,2020-01-01,71.0
+T13016,Innovative Educational Technologies,Physical Sciences,emerging,2010,5.1,False,427,"method, learning, computer, educational, apparatus",0.4508,True,2003-01-01 00:00:00,2010-01-01,28.0
+T10273,IoT and Edge/Fog Computing,Physical Sciences,acceleration,2013,5.1,False,2287,"edge, edge computing, computing, network, access",0.6844,True,,2013-01-01,
+T10798,Crystallography and molecular interactions,Physical Sciences,acceleration,2014,5.0,False,1836,"methods, molecules, pcr, method, detection",0.4599,True,,2014-01-01,
+T10763,Digital Transformation in Industry,Physical Sciences,acceleration,2018,4.9,False,1001,"digital, content, rights, rights management, management",0.4468,True,2006-01-01 00:00:00,2018-01-01,48.0
+T13362,Slime Mold and Myxomycetes Research,Physical Sciences,acceleration,2022,4.9,False,575,"molding, injection, injection molding, molded, machine",0.4549,True,2002-04-01 00:00:00,2022-01-01,79.0
+T12381,Electron Spin Resonance Studies,Life Sciences,acceleration,2018,4.9,False,2096,"spin, element, magnetic, torque, spin orbit",0.5311,True,,2018-01-01,
+T13130,Biological and pharmacological studies of plants,Health Sciences,acceleration,2021,4.8,False,1579,cluster_1579,0.5632,True,,2021-01-01,
+T13682,Engineering Education and Pedagogy,Physical Sciences,acceleration,2020,4.6,False,1488,"construction, machine, construction machine, machine construction, particular",0.2955,True,2013-01-01 00:00:00,2020-01-01,28.0
+T11813,Library Collection Development and Digital Resources,Physical Sciences,acceleration,2011,4.5,False,1699,cluster_1699,0.5072,True,,2011-01-01,
+T11289,Single-cell and spatial transcriptomics,Life Sciences,acceleration,2019,4.5,True,1472,"cell, method, communication, wireless, apparatus",0.4181,True,2012-01-01 00:00:00,2019-01-01,28.0
+T13398,Data Analysis with R,Physical Sciences,acceleration,2020,4.4,False,1915,"analysis, method, device, analysis method, analysis device",0.4167,True,2017-01-01 00:00:00,2020-01-01,12.0
+T13702,Machine Learning in Healthcare,Physical Sciences,acceleration,2020,4.4,False,2519,cluster_2519,0.6395,True,,2020-01-01,
+T11297,Ferroptosis and cancer prognosis,Health Sciences,acceleration,2021,4.4,False,838,"ferroelectric, method, capacitor, ferroelectric capacitor, device",0.3655,True,2004-01-01 00:00:00,2021-01-01,68.0
+T10159,Ionosphere and magnetosphere dynamics,Physical Sciences,acceleration,2022,4.3,False,100,"ion, implantation, ion implantation, method, apparatus",0.3994,True,2008-01-01 00:00:00,2022-01-01,56.0
+T11937,Research Data Management Practices,Physical Sciences,acceleration,2020,4.3,False,707,"database, method, query, materialized, relational",0.5939,True,2009-01-01 00:00:00,2020-01-01,44.0
+T13386,Educational Methods and Teacher Development,Physical Sciences,acceleration,2012,4.2,False,427,"method, learning, computer, educational, apparatus",0.4318,True,2003-01-01 00:00:00,2012-01-01,36.0
+T13551,Biochemical effects in animals,Health Sciences,acceleration,2018,4.2,False,387,"device, animal, pet, restraint, animals",0.3762,True,2002-04-01 00:00:00,2018-01-01,63.0
+T11133,UAV Applications and Optimization,Physical Sciences,acceleration,2021,4.1,False,1319,"collision, vehicle, method, aircraft, avoidance",0.731,True,2011-01-01 00:00:00,2021-01-01,40.0
+T14495,Public Health and Nutrition,Health Sciences,acceleration,2012,4.1,False,1232,"obesity, treating, treating obesity, treatment, methods",0.3566,True,2010-01-01 00:00:00,2012-01-01,8.0
+T10247,Perovskite Materials and Applications,Physical Sciences,acceleration,2018,4.0,False,1987,"perovskite, methods, device, layer, cell",0.8925,True,,2018-01-01,
+T10270,Blockchain Technology Applications and Security,Physical Sciences,acceleration,2017,4.0,False,2072,"ledger, blockchain, secure, method, distributed",0.711,True,,2017-01-01,
+T12627,Graphene and Nanomaterials Applications,Physical Sciences,acceleration,2013,4.0,False,1394,"graphene, method, nano, device, sheet",0.8571,True,2012-01-01 00:00:00,2013-01-01,4.0
+T13913,Blockchain Technology in Education and Learning,Physical Sciences,acceleration,2013,4.0,False,2072,"ledger, blockchain, secure, method, distributed",0.5847,True,,2013-01-01,

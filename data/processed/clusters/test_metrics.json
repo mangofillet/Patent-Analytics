@@ -1,0 +1,50 @@
+{
+  "2yr": {
+    "best_arch": "LSTM",
+    "n_test": 24072,
+    "n_val": 24072,
+    "test": {
+      "spearman": 0.4157,
+      "rmse": 1.1314,
+      "mae": 0.7267
+    },
+    "val": {
+      "spearman": 0.4143,
+      "rmse": 1.158,
+      "mae": 0.772
+    },
+    "baseline_trend": {
+      "spearman": -0.1396,
+      "rmse": 2.0457,
+      "mae": 1.3306
+    },
+    "baseline_persistence": {
+      "spearman": 0.0,
+      "rmse": 1.2549
+    }
+  },
+  "3yr": {
+    "best_arch": "LSTM",
+    "n_test": 16048,
+    "n_val": 24072,
+    "test": {
+      "spearman": 0.4666,
+      "rmse": 1.2668,
+      "mae": 0.8577
+    },
+    "val": {
+      "spearman": 0.4556,
+      "rmse": 1.2807,
+      "mae": 0.868
+    },
+    "baseline_trend": {
+      "spearman": -0.1211,
+      "rmse": 2.7483,
+      "mae": 1.8078
+    },
+    "baseline_persistence": {
+      "spearman": 0.0,
+      "rmse": 1.4244
+    }
+  }
+}

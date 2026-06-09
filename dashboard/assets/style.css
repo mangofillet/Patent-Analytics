@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap');
+
+/* ── Base ─────────────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body {
+  background: #070b14;
+  color: #e2e8f0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0; padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Dash root */
+#react-entry-point, ._dash-loading, .dash-loading { background: #070b14; }
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.12); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.22); }
+
+/* ── Glass card ───────────────────────────────────────────────────────────── */
+.glass-card {
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+}
+
+/* ── Header ───────────────────────────────────────────────────────────────── */
+.app-header {
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  height: 52px;
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  border-radius: 0;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  background: rgba(7,11,20,0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.logo-mark {
+  color: #00d4ff;
+  font-size: 18px;
+  margin-right: 10px;
+  text-shadow: 0 0 16px rgba(0,212,255,0.6);
+  line-height: 1;
+}
+
+.app-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2.5px;
+  color: #e2e8f0;
+}
+
+.app-subtitle {
+  color: #475569;
+  font-size: 11px;
+  margin-left: 14px;
+  letter-spacing: 1px;
+}
+
+/* ── Horizon radio ────────────────────────────────────────────────────────── */
+.horizon-radio { display: flex; gap: 4px; }
+
+.horizon-radio label {
+  padding: 5px 14px;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.1);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.18s;
+  user-select: none;
+}
+
+.horizon-radio label:hover { border-color: rgba(0,212,255,0.4); color: #e2e8f0; }
+
+.horizon-radio input[type='radio'] { display: none; }
+
+.horizon-radio input[type='radio']:checked + label {
+  background: rgba(0,212,255,0.12);
+  border-color: #00d4ff;
+  color: #00d4ff;
+  text-shadow: 0 0 10px rgba(0,212,255,0.4);
+}
+
+/* ── Growers / Decliners toggle ───────────────────────────────────────────── */
+.dir-toggle { display: flex; gap: 6px; }
+.dir-toggle label {
+  flex: 1; text-align: center;
+  padding: 4px 8px; border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.10);
+  font-size: 10px; font-weight: 700; letter-spacing: 0.5px;
+  color: #64748b; cursor: pointer; transition: all 0.15s; user-select: none;
+}
+.dir-toggle label:hover { color: #e2e8f0; border-color: rgba(255,255,255,0.22); }
+.dir-toggle input[type='radio'] { display: none; }
+.dir-toggle input[type='radio']:checked + label {
+  /* first option = growers (cyan), second = decliners (red) — styled by order */
+}
+.dir-toggle label:first-of-type { }
+.dir-toggle input:checked + label {
+  background: rgba(0,212,255,0.12); border-color: #00d4ff; color: #00d4ff;
+  text-shadow: 0 0 8px rgba(0,212,255,0.4);
+}
+/* decliners (2nd input) checked → red accent */
+.dir-toggle input:nth-of-type(2):checked + label {
+  background: rgba(239,68,68,0.12); border-color: #ef4444; color: #f87171;
+  text-shadow: 0 0 8px rgba(239,68,68,0.4);
+}
+
+/* ── Info / methodology button ────────────────────────────────────────────── */
+.info-btn {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 5px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.18s;
+  font-family: inherit;
+}
+
+.info-btn:hover {
+  border-color: rgba(0,212,255,0.4);
+  color: #e2e8f0;
+  background: rgba(0,212,255,0.06);
+}
+
+/* ── Leaderboard rows ─────────────────────────────────────────────────────── */
+.lb-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  cursor: pointer;
+  transition: background 0.14s;
+}
+
+.lb-row:hover { background: rgba(255,255,255,0.04); }
+.lb-row:last-child { border-bottom: none; }
+
+/* ── Guided tour ──────────────────────────────────────────────────────────── */
+.tour-backdrop {
+  position: fixed; inset: 0; z-index: 300;
+  background: rgba(7,11,20,0.72);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  display: flex; align-items: center; justify-content: center;
+  animation: fadeIn 0.25s ease;
+}
+.tour-card {
+  width: 440px; max-width: 90vw;
+  background: linear-gradient(160deg, rgba(20,29,51,0.98), rgba(11,17,32,0.98));
+  border: 1px solid rgba(0,212,255,0.30);
+  border-radius: 14px;
+  padding: 24px 26px;
+  box-shadow: 0 0 50px rgba(0,212,255,0.18), 0 20px 60px rgba(0,0,0,0.6);
+}
+.tour-next {
+  background: rgba(0,212,255,0.14);
+  border: 1px solid #00d4ff; color: #00d4ff;
+  font-size: 12px; font-weight: 700; letter-spacing: 0.5px;
+  padding: 7px 18px; border-radius: 7px; cursor: pointer; font-family: inherit;
+  transition: all 0.15s;
+}
+.tour-next:hover { background: rgba(0,212,255,0.24); box-shadow: 0 0 14px rgba(0,212,255,0.4); }
+.tour-skip {
+  background: transparent; border: none; color: #64748b;
+  font-size: 11px; cursor: pointer; font-family: inherit; letter-spacing: 0.5px;
+}
+.tour-skip:hover { color: #94a3b8; }
+
+/* ── Time slider (dash 4.x uses the `dash-slider-*` class prefix, NOT rc-slider) ── */
+.time-slider, .dash-slider-root, .dash-slider-container, .dash-slider-wrapper { width: 100% !important; }
+
+/* filled track (this was the violet bar) → cyan glow */
+.dash-slider-track {
+  background: linear-gradient(90deg, rgba(0,212,255,0.55), #00d4ff) !important;
+  box-shadow: 0 0 8px rgba(0,212,255,0.6) !important;
+}
+/* unfilled rail / range */
+.dash-slider-rail, .dash-slider-range { background: rgba(255,255,255,0.10) !important; }
+
+/* tick dots */
+.dash-slider-dot, .dash-slider-dot-outside-selection {
+  border-color: rgba(0,212,255,0.30) !important; background: #0b1120 !important;
+}
+
+/* handle (thumb) → cyan ring + glow */
+.dash-slider-thumb {
+  border: 2px solid #00d4ff !important; background: #0b1120 !important;
+  box-shadow: 0 0 10px rgba(0,212,255,0.75) !important; opacity: 1 !important;
+}
+.dash-slider-thumb:hover, .dash-slider-thumb:active, .dash-slider-thumb:focus {
+  border-color: #5eead4 !important; box-shadow: 0 0 16px rgba(0,212,255,0.95) !important;
+}
+
+/* MARK LABELS (the year text) — bright & readable; this was the dim text */
+.dash-slider-mark, .dash-slider-mark-outside-selection {
+  color: #cbd5e1 !important;
+  font-size: 11px !important;
+  font-family: 'Space Grotesk', monospace !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.5px !important;
+  opacity: 1 !important;
+}
+
+/* drag tooltip → glowing neon chip (appears above the handle while sliding) */
+.dash-slider-tooltip {
+  background: rgba(11,17,32,0.96) !important;
+  border: 1px solid rgba(0,212,255,0.55) !important;
+  color: #67e8f9 !important;
+  font-family: 'Space Grotesk', monospace !important;
+  font-size: 11px !important; font-weight: 700 !important; letter-spacing: 0.5px !important;
+  box-shadow: 0 0 14px rgba(0,212,255,0.55) !important;
+  border-radius: 6px !important; padding: 2px 8px !important;
+  text-shadow: 0 0 6px rgba(0,212,255,0.5) !important;
+}
+
+/* the persistent grey "2025" box = a numeric value <input> dash renders beside the
+   slider — keep THIS hidden (the drag tooltip above replaces it) */
+.dash-slider-container .dash-input-container,
+.dash-range-slider-input,
+.dash-range-slider-max-input,
+.dash-range-slider-min-input { display: none !important; }
+
+/* ── Clickable company rows (investor) ────────────────────────────────────── */
+.company-row { cursor: pointer; transition: background 0.13s; border-radius: 5px; }
+.company-row:hover { background: rgba(0,212,255,0.07); }
+
+/* ── Export watchlist button ──────────────────────────────────────────────── */
+.export-btn {
+  background: rgba(0,212,255,0.08);
+  border: 1px solid rgba(0,212,255,0.25);
+  color: #00d4ff;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 3px 9px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s;
+}
+.export-btn:hover {
+  background: rgba(0,212,255,0.18);
+  box-shadow: 0 0 10px rgba(0,212,255,0.35);
+}
+
+/* ── Collapsible (i) info ─────────────────────────────────────────────────── */
+.info-details {
+  background: rgba(11,17,32,0.82);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(0,212,255,0.22);
+  border-radius: 10px;
+  padding: 9px 13px;
+}
+.info-details[open] { padding-bottom: 13px; }
+
+.info-summary {
+  list-style: none;
+  cursor: pointer;
+  color: #00d4ff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  transition: color 0.15s;
+}
+.info-summary::-webkit-details-marker { display: none; }
+.info-summary:hover { color: #5eead4; }
+.info-details[open] .info-summary { margin-bottom: 2px; }
+
+/* ── Patent number link ───────────────────────────────────────────────────── */
+.patent-num {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  color: #00d4ff;
+  text-decoration: none;
+  background: rgba(0,212,255,0.08);
+  border: 1px solid rgba(0,212,255,0.22);
+  border-radius: 5px;
+  padding: 1px 6px;
+  flex-shrink: 0;
+  white-space: nowrap;
+  transition: all 0.14s;
+}
+.patent-num:hover {
+  background: rgba(0,212,255,0.18);
+  box-shadow: 0 0 8px rgba(0,212,255,0.4);
+}
+
+/* ── Filers — expandable per company ──────────────────────────────────────── */
+.filer-details {
+  background: rgba(124,58,237,0.06);
+  border: 1px solid rgba(124,58,237,0.22);
+  border-radius: 7px;
+  padding: 6px 10px;
+  margin-bottom: 5px;
+}
+.filer-details[open] { background: rgba(124,58,237,0.10); }
+.filer-summary {
+  list-style: none;
+  cursor: pointer;
+  font-size: 11.5px;
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+.filer-summary::-webkit-details-marker { display: none; }
+.filer-summary::before {
+  content: '▸';
+  color: #7c3aed;
+  font-size: 10px;
+  margin-right: 7px;
+  transition: transform 0.15s;
+}
+.filer-details[open] .filer-summary::before { transform: rotate(90deg); }
+.filer-summary:hover { color: #a78bfa; }
+
+/* ── Keyword chips ────────────────────────────────────────────────────────── */
+.keyword-chip {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: rgba(0,212,255,0.08);
+  border: 1px solid rgba(0,212,255,0.2);
+  color: #00d4ff;
+  font-size: 11px;
+  margin: 2px 3px;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+/* ── Bottom intel tabs ────────────────────────────────────────────────────── */
+.intel-tabs .tab {
+  background: transparent !important;
+  border: none !important;
+  color: #475569 !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px !important;
+  padding: 8px 16px !important;
+  border-bottom: 2px solid transparent !important;
+  transition: all 0.15s !important;
+}
+
+.intel-tabs .tab:hover { color: #94a3b8 !important; }
+
+.intel-tabs .tab--selected {
+  color: #00d4ff !important;
+  border-bottom: 2px solid #00d4ff !important;
+  background: transparent !important;
+}
+
+.intel-tabs .tab-container { border-bottom: 1px solid rgba(255,255,255,0.07) !important; }
+
+/* ── Methodology modal ────────────────────────────────────────────────────── */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(7,11,20,0.97);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  overflow-y: auto;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+.modal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+@media (max-width: 800px) { .modal-grid { grid-template-columns: 1fr; } }
+
+.modal-section {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.modal-section h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #00d4ff;
+  text-transform: uppercase;
+  margin: 0 0 14px 0;
+}
+
+.modal-section p, .modal-section li {
+  font-size: 13px;
+  color: #94a3b8;
+  line-height: 1.6;
+  margin: 4px 0;
+}
+
+.modal-section ul { padding-left: 16px; margin: 0; }
+
+.metric-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  font-size: 12px;
+}
+
+.metric-row:last-child { border-bottom: none; }
+
+.metric-label { color: #64748b; }
+
+.metric-value {
+  font-family: 'Space Grotesk', monospace;
+  color: #e2e8f0;
+  font-size: 12px;
+}
+
+.metric-value.good { color: #00d4ff; }
+.metric-value.warn { color: #f59e0b; }
+
+.pipeline-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 8px 0;
+}
+
+.step-num {
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  background: rgba(0,212,255,0.12);
+  border: 1px solid rgba(0,212,255,0.3);
+  color: #00d4ff;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.step-body { font-size: 12px; color: #94a3b8; line-height: 1.5; }
+.step-body strong { color: #e2e8f0; font-weight: 500; }
+
+/* ── Panel section headers ────────────────────────────────────────────────── */
+.panel-header {
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #475569;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ── Back button ──────────────────────────────────────────────────────────── */
+.back-btn {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: #64748b;
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.14s;
+}
+
+.back-btn:hover { color: #e2e8f0; border-color: rgba(255,255,255,0.2); }
+
+/* ── Domain filter chips ──────────────────────────────────────────────────── */
+.domain-chip {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: transparent;
+  color: #64748b;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  white-space: nowrap;
+  font-family: inherit;
+  transition: all 0.15s;
+}
+
+.domain-chip:hover {
+  border-color: rgba(0,212,255,0.35);
+  color: #e2e8f0;
+  background: rgba(0,212,255,0.05);
+}
+
+.domain-chip--active {
+  background: rgba(0,212,255,0.1);
+  border-color: #00d4ff;
+  color: #00d4ff;
+  text-shadow: 0 0 8px rgba(0,212,255,0.4);
+}
+
+/* Hide scrollbar on chips row but keep scroll */
+#domain-chips-row::-webkit-scrollbar { height: 0; }
+
+/* ── Search input focus ───────────────────────────────────────────────────── */
+#search-input:focus {
+  border-color: rgba(0,212,255,0.4) !important;
+  box-shadow: 0 0 0 2px rgba(0,212,255,0.08);
+}
+
+/* ── Plotly graph container ───────────────────────────────────────────────── */
+.js-plotly-plot .plotly { background: transparent !important; }

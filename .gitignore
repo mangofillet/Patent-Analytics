@@ -1,0 +1,23 @@
+# ── Large USPTO data files (re-fetch with scripts/download_patents.sh) ────────
+data/raw/patents/g_patent.tsv.zip
+data/raw/patents/g_patent.tsv
+data/raw/patents/g_assignee_disambiguated.tsv.zip
+data/raw/patents/*.csv.zip
+
+# ── Generated large artifacts ─────────────────────────────────────────────────
+data/processed/embeddings/
+data/processed/patent_titles.db
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
