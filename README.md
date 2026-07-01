@@ -1,5 +1,7 @@
 # Patent Emerging Radar
 
+![Patent Emerging Radar — the Technology Galaxy and cluster growth forecasts](docs/demo.gif)
+
 Forecasts which technology areas will explode in the next 2–3 years by clustering 5.6M USPTO patent titles and tracking cluster growth dynamics with LSTM.
 
 **Why patents?** Companies file patents 1–3 years before papers are published. A cluster of semantically similar patents accelerating today is a leading signal of the next CRISPR or LLMs — before academic literature catches up.
